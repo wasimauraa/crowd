@@ -68,9 +68,25 @@
       border: 1px solid #ccc;
       border-radius: 6px;
     }
-    .qr-code {
+     .qr-code {
       text-align: center;
       margin-top: 20px;
+    }
+    .qr-code img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .qr-code img {
+        max-width: 120px;
+      }
+    }
+    @media (min-width: 769px) {
+      .qr-code img {
+        max-width: 200px;
+      }
     }
     .donation-buttons button {
       margin: 5px;
